@@ -1,27 +1,34 @@
-# Infrastructure engineering portfolio
+# Hi, I'm Sal
 
-Hands-on projects covering Linux operations, configuration management, cloud
-networking, container delivery, Kubernetes, observability, and recovery.
+My projects focus on Linux automation, cloud networking, container delivery, and
+service reliability. I build small, runnable systems and document their setup,
+failure modes, and recovery steps.
 
-## Start here
+## Featured work
 
-| Area | Project | What to inspect |
+| Project | Focus | Verification |
 |---|---|---|
-| Linux operations | [Linux administration toolkit](https://github.com/sal-s-root/linux-admin-toolkit) | Bash checks, failure-path tests, hardened systemd timer |
-| Configuration management | [Ansible Linux baseline](https://github.com/sal-s-root/ansible-server-baseline) | Reusable role, check mode, idempotence, verification |
-| Infrastructure as code | [AWS network module](https://github.com/sal-s-root/terraform-aws-network-lab) | Two-zone private networking, inputs, mocked plan tests |
-| Container operations | [Compose platform](https://github.com/sal-s-root/compose-platform-lab) | Reverse proxy, private networking, health gating, limits |
-| Kubernetes | [Kubernetes platform](https://github.com/sal-s-root/kubernetes-platform-lab) | Helm, probes, security contexts, scaling, disruption policy |
-| Observability | [Monitoring platform](https://github.com/sal-s-root/observability-platform-lab) | Prometheus, Grafana, alert tests, dashboards, runbooks |
-| Recovery | [Backup/restore lab](https://github.com/sal-s-root/backup-restore-lab) | Verified restoration, corruption detection, safe destinations |
+| [AWS private network](https://github.com/sal-s-root/terraform-aws-network-lab) | Reusable Terraform/OpenTofu module with subnets in two availability zones | [Mocked plan tests](https://github.com/sal-s-root/terraform-aws-network-lab/blob/main/VALIDATION.md) |
+| [Ansible Linux baseline](https://github.com/sal-s-root/ansible-server-baseline) | Reusable role, tagged tasks, and managed configuration | [Apply, idempotence, inspection](https://github.com/sal-s-root/ansible-server-baseline/blob/main/VALIDATION.md) |
+| [Kubernetes platform](https://github.com/sal-s-root/kubernetes-platform-lab) | Helm, probes, resource controls, scaling, and network policy | [Chart and schema checks](https://github.com/sal-s-root/kubernetes-platform-lab/blob/main/VALIDATION.md) |
+| [Compose platform](https://github.com/sal-s-root/compose-platform-lab) | Caddy proxy, private networking, and service health gating | [Outage and recovery checks](https://github.com/sal-s-root/compose-platform-lab/blob/main/VALIDATION.md) |
+| [Observability stack](https://github.com/sal-s-root/observability-platform-lab) | Prometheus, Grafana, Alertmanager, and operational runbooks | [Rule tests and live scraping](https://github.com/sal-s-root/observability-platform-lab/blob/main/VALIDATION.md) |
+| [Backup and restore](https://github.com/sal-s-root/backup-restore-lab) | Consistent SQLite backups and safe restore destinations | [Restore and corruption drills](https://github.com/sal-s-root/backup-restore-lab/blob/main/VALIDATION.md) |
 
-## Supporting projects
+## More projects
 
-- [Instrumented service fixture](https://github.com/sal-s-root/containerized-health-api): health, readiness, version, metrics, and container CI.
-- [Network diagnostics](https://github.com/sal-s-root/network-health-checks): bounded TCP checks and explicit target manifests.
-- [Reliability operations](https://github.com/sal-s-root/reliability-operations-lab): synthetic drills, acceptance policy, and SLO assumptions.
-- [Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox): small metadata checks consolidated into one maintained collection.
+[Linux administration](https://github.com/sal-s-root/linux-admin-toolkit) ·
+[Network diagnostics](https://github.com/sal-s-root/network-health-checks) ·
+[Instrumented service](https://github.com/sal-s-root/containerized-health-api) ·
+[Reliability drills](https://github.com/sal-s-root/reliability-operations-lab) ·
+[Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox)
 
-Each lab documents setup, teardown, verification, and limitations. Local test
-results and mocked plans are kept separate from real cloud or cluster deployment.
-The archived standalone utilities have been consolidated into the toolbox.
+The toolbox brings small metadata checks into one maintained collection. The
+standalone versions remain available as archived repositories.
+
+## How the projects are checked
+
+Each maintained lab includes executable checks, teardown guidance, and a
+`VALIDATION.md` explaining what was exercised. GitHub Actions runs the relevant
+checks on changes. Local container tests are distinguished from mocked AWS plans
+and Kubernetes schema validation; the latter do not claim deployed environments.
