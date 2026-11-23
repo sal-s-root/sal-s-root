@@ -22,7 +22,8 @@ exercises, developed or reconstructed in 2026.
 [Network diagnostics](https://github.com/sal-s-root/network-health-checks) ·
 [Instrumented service](https://github.com/sal-s-root/containerized-health-api) ·
 [Reliability drills](https://github.com/sal-s-root/reliability-operations-lab) ·
-[Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox)
+[Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox) ·
+[Certificate lifecycle](https://github.com/sal-s-root/certificate-lifecycle-lab)
 
 The toolbox brings small metadata checks into one maintained collection. The
 standalone versions remain public as smaller, focused exercises. Their repository
@@ -39,7 +40,7 @@ not a claim of five years of contribution history.
 | 2. Repeatable administration | Network diagnostics and consistent host configuration | [Network checks](https://github.com/sal-s-root/network-health-checks), [Ansible baseline](https://github.com/sal-s-root/ansible-server-baseline) |
 | 3. Application delivery | Health endpoints, container isolation, and service dependencies | [Health API](https://github.com/sal-s-root/containerized-health-api), [Compose platform](https://github.com/sal-s-root/compose-platform-lab) |
 | 4. Infrastructure and orchestration | Network modules, deployment configuration, and scaling controls | [AWS network](https://github.com/sal-s-root/terraform-aws-network-lab), [Kubernetes platform](https://github.com/sal-s-root/kubernetes-platform-lab) |
-| 5. Reliable operations | Monitoring, failure drills, and verified recovery | [Observability](https://github.com/sal-s-root/observability-platform-lab), [reliability drills](https://github.com/sal-s-root/reliability-operations-lab), [backup and restore](https://github.com/sal-s-root/backup-restore-lab) |
+| 5. Reliable operations | Monitoring, failure drills, and verified recovery | [Observability](https://github.com/sal-s-root/observability-platform-lab), [reliability drills](https://github.com/sal-s-root/reliability-operations-lab), [backup and restore](https://github.com/sal-s-root/backup-restore-lab), [certificate lifecycle](https://github.com/sal-s-root/certificate-lifecycle-lab) |
 
 ## How the projects are checked
 
