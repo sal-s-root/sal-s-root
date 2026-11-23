@@ -51,7 +51,9 @@ and Kubernetes schema validation; the latter do not claim deployed environments.
 
 ## About the history
 
-Earlier synthetic commit dates have been corrected to 2026. Each affected
-repository includes a `HISTORY.md` describing the evidence and its limits.
-The learning stages describe subject progression, rather than years of employment
-or a claim of historical production work.
+The 40 small standalone exercises use retrospectively assigned learning dates
+across 2020–2026. These organize a study timeline; the exercises were created or
+reconstructed in 2026, and the assigned dates are not original authoring records.
+Each exercise explains this in `HISTORY.md`. The larger platform labs retain their
+actual dates. Learning stages and assigned dates do not represent years of
+employment or historical production work.
