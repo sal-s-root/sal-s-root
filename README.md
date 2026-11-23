@@ -2,7 +2,8 @@
 
 My projects focus on Linux automation, cloud networking, container delivery, and
 service reliability. I build small, runnable systems and document their setup,
-failure modes, and recovery steps.
+failure modes, and recovery steps. These are personal learning labs and focused
+exercises, developed or reconstructed in 2026.
 
 ## Featured work
 
@@ -24,7 +25,8 @@ failure modes, and recovery steps.
 [Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox)
 
 The toolbox brings small metadata checks into one maintained collection. The
-standalone versions remain public as smaller, focused exercises.
+standalone versions remain public as smaller, focused exercises. Their repository
+count reflects the choice to keep individual exercises separate.
 
 ## Learning path
 
@@ -45,3 +47,10 @@ Each maintained lab includes executable checks, teardown guidance, and a
 `VALIDATION.md` explaining what was exercised. GitHub Actions runs the relevant
 checks on changes. Local container tests are distinguished from mocked AWS plans
 and Kubernetes schema validation; the latter do not claim deployed environments.
+
+## About the history
+
+Earlier synthetic commit dates have been corrected to 2026. Each affected
+repository includes a `HISTORY.md` describing the evidence and its limits.
+The learning stages describe subject progression, rather than years of employment
+or a claim of historical production work.
