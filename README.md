@@ -23,7 +23,10 @@ exercises, developed or reconstructed in 2026.
 [Instrumented service](https://github.com/sal-s-root/containerized-health-api) ·
 [Reliability drills](https://github.com/sal-s-root/reliability-operations-lab) ·
 [Infrastructure toolbox](https://github.com/sal-s-root/infra-toolbox) ·
-[Certificate lifecycle](https://github.com/sal-s-root/certificate-lifecycle-lab)
+[Certificate lifecycle](https://github.com/sal-s-root/certificate-lifecycle-lab) ·
+[Process supervision](https://github.com/sal-s-root/linux-process-supervision-lab) ·
+[Log rotation](https://github.com/sal-s-root/linux-log-rotation-lab) ·
+[Database migrations](https://github.com/sal-s-root/sqlite-migration-lab)
 
 The toolbox brings small metadata checks into one maintained collection. The
 standalone versions remain public as smaller, focused exercises. Their repository
@@ -46,8 +49,8 @@ not a claim of five years of contribution history.
 
 Each maintained lab includes executable checks, teardown guidance, and a
 `VALIDATION.md` explaining what was exercised. GitHub Actions runs the relevant
-checks on changes. Local container tests are distinguished from mocked AWS plans
-and Kubernetes schema validation; the latter do not claim deployed environments.
+checks on changes. Validation notes separate live local drills, mocked AWS plans,
+and Kubernetes schema checks.
 
 ## About the history
 
